@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Examen 1ra parte</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/stylesheet.css">
+        <script src="js/libs/bignumber.js/bignumber.min.js"></script>
+        <script src="js/libs/numeral.js/numeral.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Proveedor</h1>    
+        </header>
+        <form id="formulario" action="javascript:;">
+            <p><em>El borde azul indica obligatorio.</em></p>
+            <p>
+                <label accesskey="C">
+                    <label>Clave</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input  style="text-align: right" name="clave" id="clave" type="text" required placeholder="1 a 10 digitos" minlength="1" maxlength="10">
+                </label>
+            </p>
+            <p>
+                <label accesskey="N">
+                    <label>Nombre</label>&nbsp;
+                    <input style="text-align: right" name="nombre" id="nombre" type="text" required placeholder="1 a 50 digitos" minlength="1" maxlength="50">
+                </label>
+            </p>
+            <p>
+                <label accesskey="T">
+                    <label>Teléfono</label>
+                    <input name="telefono" id="telefono" type="text" required placeholder="8 a 14 digitos" minlength="8" maxlength="14">
+                </label>
+            </p>
+            <p>
+                <label accesskey="F">
+                    <label>Fecha</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input name="fecha" id="fecha" type="date">
+                </label>
+            </p>
+            <fieldset>
+                <legend>Menú de Comida</legend>
+                <div>
+                  <label>
+                    <input type="checkbox" accesskey="S" name="torta" id="Hawaiana" value="70">
+                    <b>Hawaiana $70.00</b>
+                  </label>
+                <div>
+                  <label>
+                    <input type="checkbox" accesskey="L" name="torta" id="Queso" value="110">
+                    <b>Queso $110.00</b>
+                  </label>
+                <div>
+                  <label>
+                    <input type="checkbox" accesskey="D" name="torta" id="Milanesa" value="105">
+                    <b>Milanesa $105.00</b>
+                  </label>
+                <div>
+                  <label>
+                    <input type="checkbox" accesskey="C" name="torta" id="Jamón" value="75">
+                    <b>Jamón $75.00</b>
+                  </label>
+                <div>
+                  <label>
+                    <input type="checkbox" accesskey="R" name="torta" id="Alemana" value="80">
+                    <b>Alemana $80.00</b>
+                  </label>
+                <div>
+                  <label>
+                    <input type="checkbox" accesskey="L" name="torta" id="Española" value="120">
+                    <b>Española $120.00</b>
+                  </label>
+                </div>
+                <label style="font-weight: normal;">
+                    Seleccionaste: <output id="SalidaSeleccionaste" style="font-weight: normal;"></output>
+                </label><br>
+                <label style="font-weight: normal;">
+                    Total: <output id="SalidaTotal" style="font-weight: normal;"></output>
+                </label>
+            </fieldset>
+            <input type="submit" name="bot" id="pantalla" value="EnPantalla" accesskey="P">
+            <input type="submit" name="bot" id="alerta" value="EnAlerta" accesskey="A">
+        </form>
+        <div id="datosgen"></div>
+        <footer>
+          Copyright 2021 SANTANA MURILLO EDGAR FRANCISCO EXAMEN 1ER DEPARTAMENTAL PARTE 1
+        </footer>
+        <script src="js/javascript.js"></script>
+    </body>
+</html>
